@@ -15,94 +15,325 @@
 <body>
         <!-- Шапка сайта-->
     <header class="page-header">
-        <nav>
+        <div class="conteiner header">
+        <nav class="header-nav">
             <a href="./index.html" class="logo"> <span class="logo-accent">Web</span>Studio</a>
         <ul class="site-nav list">
-            <li><a href="./index.html" class="link current">Студия</a></li>
-            <li><a href="./portfolio.html" class="link">Портфолио</a></li>
-            <li><a href="" class="link">Контакты</a></li>
+            <li class="item"><a href="./index.html" class="link current">Студия</a></li>
+            <li class="item"><a href="./portfolio.html" class="link">Портфолио</a></li>
+            <li class="item"><a href="" class="link">Контакты</a></li>
         </ul>
         </nav>
         <ul class="auth-nav list">
-            <li><a href="mailto:info@devstudio.com" class="link">info@devstudio.com</a></li>
-            <li><a href="tel:380961111111" class="link">+38 096 111 11 11</a></li>
+            <li class="item">
+                <a href="mailto:info@devstudio.com" class="link" aria-label="електронна пошта">
+                    <svg class="icon" width="16" height="12">
+                    <use href="./images/spirite.svg#mail-icon"></use>
+                </svg>info@devstudio.com
+                
+            </a></li>
+            <li class="item">
+                <a href="tel:380961111111" class="link" aria-label="телефон">
+                    <svg class="icon" width="10" height="16">
+                    <use href="./images/spirite.svg#mobile-icon"></use>
+                </svg>+38 096 111 11 11
+                
+            </a></li>
         </ul>
+        </div>
     </header>
     <main>
              <!-- Герой -->
-        <section class="section-hero">
+        <section class="section hero">
+            <div class="conteiner hello">
             <h1 class="hero-title">Эффективные решения для вашего бизнеса</h1>
             <a href="" class="botton list">Заказать услугу</a>
+            </div>
         </section>
             <!-- Особенности -->
         <section class="section">
-            <h2 class="section-title">Особенности</h2>
+            <div class="conteiner">
+            <h2 class="visualyl-hidden">Особенности</h2>
             <ul class="section-features list">
-                <li>
+                <li class="item">
+                    <div class="item-icon">
+                    <svg class="icon" width="65" height="70">
+                        <use href="./images/spirite.svg#antenna"></use>
+                    </svg>
+                    </div>
                     <h3 class="subtitle">Внимание к деталям</h3>
                     <p class="text">Идейные соображения, а также начало повседневной работы по формированию позиции.</p>
                 </li>
-                <li>
+                <li class="item">
+                    <div class="item-icon">
+                    <svg class="icon" width="65" height="70">
+                        <use href="./images/spirite.svg#clock"></use>
+                    </svg>
+                    </div>
                     <h3 class="subtitle">Пунктуальность</h3>
                     <p class="text">Задача организации, в особенности же рамки и место обучения кадров влечет за собой.</p>
                 </li>
-                <li>
+                <li class="item">
+                    <div class="item-icon">
+                    <svg class="icon" width="65" height="70">
+                        <use href="./images/spirite.svg#diagram"></use>
+                    </svg>
+                    </div>
                     <h3 class="subtitle">Планирование</h3>
                     <p class="text">Равным образом консультация с широким активом в значительной степени обуславливает.</p>
                 </li>
-                <li>
+                <li class="item">
+                    <div class="item-icon">
+                    <svg class="icon" width="65" height="70">
+                        <use href="./images/spirite.svg#astronaut"></use>
+                    </svg>
+                    </div>
                     <h3 class="subtitle">Современные технологии</h3>
                     <p class="text">Значимость этих проблем настолько очевидна, что реализация плановых заданий.</p>
                 </li>
             </ul>
+            </div>
         </section>
              <!-- Чем мы занимаемся -->
-        <section class="section">
+        <section class="section work">
+            <div class="conteiner">
             <h2 class="section-title">Чем мы занимаемся</h2>
             <ul class="section-work list">
-                <li><a href=""><img src="./images/imgcomp.jpg" alt="робота за компютером" width="370" height="294"></a></li>
-                <li><a href=""><img src="./images/imgtelefon.jpg" alt="робота за компютером" width="370" height="294"></a></li>
-                <li><a href=""><img src="./images/imgrutina.jpg" alt="подбор цветов" width="370" height="294"></a></li>
+                <li class="item"><a href=""><img src="./images/imgcomp.jpg" alt="робота за компютером" width="370" height="294"></a></li>
+                <li class="item"><a href=""><img src="./images/imgtelefon.jpg" alt="робота за компютером" width="370" height="294"></a></li>
+                <li class="item"><a href=""><img src="./images/imgrutina.jpg" alt="подбор цветов" width="370" height="294"></a></li>
             </ul>
+            </div>
         </section>
             <!-- Наша команда -->
         <section class="section team">
+            <div class="conteiner">
             <h2 class="section-title">Наша команда</h2>
             <ul class="section-team list">
-                <li>
-                    <img src="./images/Designer.jpg" alt="" width="270" height="260">
+                <li class="item">
+                    <img class="img-card" src="./images/Designer.jpg" alt="" width="270" height="260">
+                    <div class="card">
                     <h3 class="subtitle">Игорь Демьяненко</h3>
                     <p class="text">Product Designer</p>
+                    <ul class="link list">
+                        <li class="link-social"><a href="#">
+                            <svg class="icon" width="20" height="20">
+                                <use href="./images/spirite.svg#instagram"></use>
+                            </svg>
+                        </a></li>
+                        <li class="link-social"><a href="#">
+                            <svg class="icon" width="20" height="20">
+                                <use href="./images/spirite.svg#twitter"></use>
+                            </svg>
+                        </a></li>
+                        <li class="link-social"><a href="#">
+                            <svg class="icon" width="20" height="20">
+                                <use href="./images/spirite.svg#facebook"></use>
+                            </svg>
+                        </a></li>
+                        <li class="link-social"><a href="#">
+                            <svg class="icon" width="20" height="20">
+                                <use href="./images/spirite.svg#linkedin"></use>
+                            </svg>
+                        </a></li>
+                    </ul>
+                    </div>
                 </li>
-                <li>
-                    <img src="./images/frontend_developer.jpg" alt="" width="270" height="260">
+                <li class="item">
+                    <img class="img-card" src="./images/frontend_developer.jpg" alt="" width="270" height="260">
+                    <div class="card">
                     <h3 class="subtitle">Ольга Репина</h3>
                     <p class="text">Frontend Developer</p>
+                    <ul class="link list">
+                        <li class="link-social">
+                            <a href="#" aria-label="instagram">
+                                <svg class="icon" width="20" height="20">
+                                    <use href="./images/spirite.svg#instagram"></use>
+                                </svg>
+                            </a></li>
+                        <li class="link-social">
+                            <a href="#" aria-label="twitter">
+                                <svg class="icon" width="20" height="20">
+                                    <use href="./images/spirite.svg#twitter"></use>
+                                </svg>
+                            </a></li>
+                        <li class="link-social">
+                            <a href="#" aria-label="facebook">
+                                <svg class="icon" width="20" height="20">
+                                    <use href="./images/spirite.svg#facebook"></use>
+                                </svg>
+                            </a></li>
+                        <li class="link-social">
+                            <a href="#" aria-label="linkedin">
+                                <svg class="icon" width="20" height="20">
+                                    <use href="./images/spirite.svg#linkedin"></use>
+                                </svg>
+                            </a></li>
+                    </ul>
+                    </div>
                 </li>
-                <li>
-                    <img src="./images/marketing.jpg" alt="" width="270" height="260">
+                <li class="item">
+                    <img class="img-card" src="./images/marketing.jpg" alt="" width="270" height="260">
+                    <div class="card">
                     <h3 class="subtitle">Николай Тарасов</h3>
                     <p class="text">Marketing</p>
+                    <ul class="link list">
+                        <li class="link-social">
+                            <a href="#" aria-label="instagram">
+                                <svg class="icon" width="20" height="20">
+                                    <use href="./images/spirite.svg#instagram"></use>
+                                </svg>
+                            </a></li>
+                        <li class="link-social">
+                            <a href="#" aria-label="twitter">
+                                <svg class="icon" width="20" height="20">
+                                    <use href="./images/spirite.svg#twitter"></use>
+                                </svg>
+                            </a></li>
+                        <li class="link-social">
+                            <a href="#" aria-label="facebook">
+                                <svg class="icon" width="20" height="20">
+                                    <use href="./images/spirite.svg#facebook"></use>
+                                </svg>
+                            </a></li>
+                        <li class="link-social">
+                            <a href="#" aria-label="linkedin">
+                                <svg class="icon" width="20" height="20">
+                                    <use href="./images/spirite.svg#linkedin"></use>
+                                </svg>
+                            </a></li>
+                    </ul>
+                    </div>
                 </li>
-                <li>
-                    <img src="./images/UI_Designer.jpg" alt="" width="270" height="260">
+                <li class="item">
+                    <img class="img-card" src="./images/UI_Designer.jpg" alt="" width="270" height="260">
+                    <div class="card">
                     <h3 class="subtitle">Михаил Ермаков</h3>
                     <p class="text">UI Designer</p>
+                    <ul class="link list">
+                        <li class="link-social">
+                            <a href="#" aria-label="instagram">
+                                <svg class="icon" width="20" height="20">
+                                    <use href="./images/spirite.svg#instagram"></use>
+                                </svg>
+                            </a></li>
+                        <li class="link-social">
+                            <a href="#" aria-label="twitter">
+                                <svg class="icon" width="20" height="20">
+                                    <use href="./images/spirite.svg#twitter"></use>
+                                </svg>
+                            </a></li>
+                        <li class="link-social">
+                            <a href="#" aria-label="facebook">
+                                <svg class="icon" width="20" height="20">
+                                    <use href="./images/spirite.svg#facebook"></use>
+                                </svg>
+                            </a></li>
+                        <li class="link-social">
+                            <a href="#" aria-label="linkedin">
+                                <svg class="icon" width="20" height="20">
+                                    <use href="./images/spirite.svg#linkedin"></use>
+                                </svg>
+                            </a>
+                        </li>
+                    </ul>
+                    </div>
                 </li>
             </ul>
+            </div>
+        </section>
+        <section class="section clients">
+            <div class="conteiner">
+                <h2 class="section-title">Постоянные клиенты</h2>
+                <ul class="section-company list">
+                    <li class="company">
+                        <a href="#" aria-label="Логотип компании">
+                        <svg class="icon" width="106" height="60">
+                            <use href="./images/spirite.svg#logo"></use>
+                        </svg>
+                         </a>
+                    </li>
+                <li class="company">
+                    <a href="#" aria-label="Логотип компании">
+                        <svg class="icon" width="106" height="60">
+                            <use href="./images/spirite.svg#logo-2"></use>
+                        </svg>
+                    </a>
+                </li>
+                <li class="company">
+                    <a href="#" aria-label="Логотип компании">
+                        <svg class="icon" width="106" height="60">
+                            <use href="./images/spirite.svg#logo-3"></use>
+                        </svg>
+                    </a>
+                </li>
+                <li class="company">
+                    <a href="#" aria-label="Логотип компании">
+                        <svg class="icon" width="106" height="60">
+                            <use href="./images/spirite.svg#logo-4"></use>
+                        </svg>
+                    </a>
+                </li>
+                <li class="company">
+                    <a href="#" aria-label="Логотип компании">
+                        <svg class="icon" width="106" height="60">
+                            <use href="./images/spirite.svg#logo-5"></use>
+                        </svg>
+                    </a>
+                </li>
+                <li class="company">
+                    <a href="#" aria-label="Логотип компании">
+                        <svg class="icon" width="106" height="60">
+                            <use href="./images/spirite.svg#logo-6"></use>
+                        </svg>
+                    </a>
+                </li>
+                </ul>
+            </div>
         </section>
 
     </main>
     <!-- Футер -->
-    <footer class="section-footer">
-        <div class="auth-nav">
+    <footer class="section footer">
+        <div class="conteiner footer">
+            <div class="auth-nav">
             <a href="./index.html" class="logo"> <span class="logo-accent">Web</span>Studio</a>
-            <address>
-               <a href="" class="address">г. Киев, пр-т Леси Украинки, 26</a> <br>
-                <a href="mailto:info@devstudio.com" class="contact">info@devstudio.com</a> <br>
+            <address class="address-footer">
+               <a href="" class="address">г. Киев, пр-т Леси Украинки, 26</a>
+                <a href="mailto:info@devstudio.com" class="contact">info@devstudio.com</a>
                 <a href="tel:380961111111" class="contact">+38 096 111 11 11</a>
-            
             </address>
+            </div>
+            <div class="join">
+                <b class="join-title">присоединяйтесь</b>
+                <ul class="link list">
+                    <li class="link-social">
+                        <a href="#" aria-label="instagram">
+                            <svg class="icon" width="20" height="20">
+                                <use href="./images/spirite.svg#instagram"></use>
+                            </svg>
+                        </a></li>
+                    <li class="link-social">
+                        <a href="#" aria-label="twitter">
+                            <svg class="icon" width="20" height="20">
+                                <use href="./images/spirite.svg#twitter"></use>
+                            </svg>
+                        </a></li>
+                    <li class="link-social">
+                        <a href="#" aria-label="facebook">
+                            <svg class="icon" width="20" height="20">
+                                <use href="./images/spirite.svg#facebook"></use>
+                            </svg>
+                        </a></li>
+                    <li class="link-social">
+                        <a href="#" aria-label="linkedin">
+                            <svg class="icon" width="20" height="20">
+                                <use href="./images/spirite.svg#linkedin"></use>
+                            </svg>
+                        </a>
+                    </li>
+                </ul>
+            </div>
         </div>
     </footer>
 </body>

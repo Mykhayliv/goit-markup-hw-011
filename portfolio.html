@@ -17,94 +17,178 @@
 <body>
     <!-- Шапка сайта-->
     <header class="page-header">
-        <nav>
-            <a href="./index.html" class="logo"> <span class="logo-accent">Web</span>Studio</a>
-            <ul class="site-nav list">
-                <li><a href="./index.html" class="link">Студия</a></li>
-                <li><a href="./portfolio.html" class="link current">Портфолио</a></li>
-                <li><a href="" class="link">Контакты</a></li>
+        <div class="conteiner header">
+            <nav class="header-nav">
+                <a href="./index.html" class="logo"> <span class="logo-accent">Web</span>Studio</a>
+                <ul class="site-nav list">
+                    <li class="item"><a href="./index.html" class="link">Студия</a></li>
+                    <li class="item"><a href="./portfolio.html" class="link current">Портфолио</a></li>
+                    <li class="item"><a href="" class="link">Контакты</a></li>
+                </ul>
+            </nav>
+            <ul class="auth-nav list">
+                <li class="item">
+                    <a href="mailto:info@devstudio.com" class="link" aria-label="електронна пошта">
+                        <svg class="icon" width="16" height="12">
+                            <use href="./images/spirite.svg#mail-icon"></use>
+                        </svg>info@devstudio.com
+    
+                    </a>
+                </li>
+                <li class="item">
+                    <a href="tel:380961111111" class="link" aria-label="телефон">
+                        <svg class="icon" width="10" height="16">
+                            <use href="./images/spirite.svg#mobile-icon"></use>
+                        </svg>+38 096 111 11 11
+    
+                    </a>
+                </li>
             </ul>
-        </nav>
-        <ul class="auth-nav list">
-            <li><a href="mailto:info@devstudio.com" class="link">info@devstudio.com</a></li>
-            <li><a href="tel:380961111111" class="link">+38 096 111 11 11</a></li>
-        </ul>
+        </div>
     </header>
-        <menu>
-            <!-- Портфолио -->
+        <menu class="menu-portfolio">
+        <!-- Портфолио список работ-->
         <section>
-            <!-- Фильтр -->
-            <h2>Фильтр</h2>
-            <ul class="portfolio-nav list">
-                <li class="botton" type="botton"><a href="" class="link">Все</a></li>
-                <li class="botton" type="botton"><a href="" class="link">Веб-сайты</a></li>
-                <li class="botton" type="botton"><a href="" class="link">Приложения</a></li>
-                <li class="botton" type="botton"><a href="" class="link">Дизайн</a></li>
-                <li class="botton" type="botton"><a href="" class="link">Маркетинг</a></li>
+            <div class="conteiner portfolio">
+                <!-- <h2>Фильтр</h2> -->
+            <h1 class="visualyl-hidden">Портфолио</h1>
+                <div class="portfolio-nav list">
+                    <button class="botton" type="botton">Все</button>
+                    <button class="botton" type="botton">Веб-сайты</button>
+                    <button class="botton" type="botton">Приложения</button>
+                    <button class="botton" type="botton">Дизайн</button>
+                    <button class="botton" type="botton">Маркетинг</button>
+                </div>
+                <ul class="portfolio-items list">
+                <li class="card">
+                    <a href="" class="link">
+                        <img src="./images/Технокряк.jpg" alt="" width="370" height="294" class="img-card">
+                        <div class="card-content">
+                            <h2 class="title">Технокряк</h2>
+                            <p class="text">Веб-сайт</p>
+                        </div>
+                    </a>
+                </li>
+                <li class="card">
+                    <a href="" class="link">
+                        <img src="./images/Постер New Orlean vs Golden Star.jpg" alt="" width="370" height="294" class="img-card">
+                        <div class="card-content">
+                            <h2 class="title">Постер New Orlean vs Golden Star</h2>
+                            <p class="text">Дизайн</p>
+                        </div>
+                    </a>
+                </li>
+                <li class="card">
+                    <a href="" class="link">
+                        <img src="./images/Ресторан Seafood.jpg" alt="" width="370" height="294" class="img-card">
+                        <div class="card-content">
+                            <h2 class="title">Ресторан Seafood</h2>
+                            <p class="text">Приложение</p>
+                        </div>
+                    </a>
+                </li>
+                <li class="card">
+                    <a href="" class="link">
+                        <img src="./images/Проект Prime.jpg" alt="" width="370" height="294" class="img-card">
+                        <div class="card-content">
+                            <h2 class="title">Проект Prime</h2>
+                            <p class="text">Маркетинг</p>
+                        </div>
+                    </a>
+                </li>
+                <li class="card">
+                    <a href="" class="link">
+                        <img src="./images/Проект Boxes.jpg" alt="" width="370" height="294" class="img-card">
+                        <div class="card-content">
+                            <h2 class="title">Проект Boxes</h2>
+                            <p class="text">Приложение</p>
+                        </div>
+                    </a>
+                </li>
+                <li class="card">
+                    <a href="" class="link">
+                        <img src="./images/Inspiration has no Borders.jpg" alt="" width="370" height="294" class="img-card">
+                        <div class="card-content">
+                            <h2 class="title">Inspiration has no Borders</h2>
+                            <p class="text">Веб-сайт</p>
+                        </div>
+                    </a>
+                </li>
+                <li class="card">
+                    <a href="" class="link">
+                        <img src="./images/Издание Limited Edition.jpg" alt="" width="370" height="294" class="img-card">
+                        <div class="card-content">
+                            <h2 class="title">Издание Limited Edition</h2>
+                            <p class="text">Дизайн</p>
+                        </div>
+                    </a>
+                </li>
+                <li class="card">
+                    <a href="" class="link">
+                        <img src="./images/Проект LAB.jpg" alt="" width="370" height="294" class="img-card">
+                        <div class="card-content">
+                            <h2 class="title">Проект LAB</h2>
+                            <p class="text">Маркетинг</p>
+                        </div>
+                    </a>
+                </li>
+                <li class="card">
+                    <a href="" class="link">
+                        <img src="./images/Growing Business.jpg" alt="" width="370" height="294" class="img-card">
+                        <div class="card-content">
+                            <h2 class="title">Growing Business</h2>
+                            <p class="text">Приложение</p>
+                        </div>
+                    </a>
+                </li>
             </ul>
-        </section>
-        <section>
-        <!-- Портфолио список работ-->        
-            <h2>Портфолио</h2>
-            <ul class="portfolio-items list">
-                <li>
-                    <a href=""><img src="./images/Технокряк.jpg" alt="" width="370" height="294"></a>
-                    <h3 class="title">Технокряк</h3>
-                    <p class="text">Веб-сайт</p>
-                </li>
-                <li>
-                    <a href=""><img src="./images/Постер New Orlean vs Golden Star.jpg" alt="" width="370" height="294"></a>
-                    <h3 class="title">Постер New Orlean vs Golden Star</h3>
-                    <p class="text">Дизайн</p>
-                </li>
-                <li>
-                    <a href=""><img src="./images/Ресторан Seafood.jpg" alt="" width="370" height="294"></a>
-                    <h3 class="title">Ресторан Seafood</h3>
-                    <p class="text">Приложение</p>
-                </li>
-                <li>
-                    <a href=""><img src="./images/Проект Prime.jpg" alt="" width="370" height="294"></a>
-                    <h3 class="title">Проект Prime</h3>
-                    <p class="text">Маркетинг</p>
-                </li>
-                <li>
-                    <a href=""><img src="./images/Проект Boxes.jpg" alt="" width="370" height="294"></a>
-                    <h3 class="title">Проект Boxes</h3>
-                    <p class="text">Приложение</p>
-                </li>
-                <li>
-                    <a href=""><img src="./images/Inspiration has no Borders.jpg" alt="" width="370" height="294"></a>
-                    <h3 class="title">Inspiration has no Borders</h3>
-                    <p class="text">Веб-сайт</p>
-                </li>
-                <li>
-                    <a href=""><img src="./images/Издание Limited Edition.jpg" alt="" width="370" height="294"></a>
-                    <h3 class="title">Издание Limited Edition</h3>
-                    <p class="text">Дизайн</p>
-                </li>
-                <li>
-                    <a href=""><img src="./images/Проект LAB.jpg" alt="" width="370" height="294"></a>
-                    <h3 class="title">Проект LAB</h3>
-                    <p class="text">Маркетинг</p>
-                </li>
-                <li>
-                    <a href=""><img src="./images/Growing Business.jpg" alt="" width="370" height="294"></a>
-                    <h3 class="title">Growing Business</h3>
-                    <p class="text">Приложение</p>
-                </li>
-            </ul>
+            </div>
         </section>
         </menu>
     <!-- Футер -->
-    <footer class="section-footer">
-        <div class="auth-nav">
-            <a href="./index.html" class="logo"> <span class="logo-accent">Web</span>Studio</a>
-            <address>
-                <a href="" class="address">г. Киев, пр-т Леси Украинки, 26</a> <br>
-                <a href="mailto:info@devstudio.com" class="contact">info@devstudio.com</a> <br>
-                <a href="tel:380961111111" class="contact">+38 096 111 11 11</a>
-
-            </address>
+    <footer class="section footer">
+        <div class="conteiner footer">
+            <div class="auth-nav">
+                <a href="./index.html" class="logo"> <span class="logo-accent">Web</span>Studio</a>
+                <address class="address-footer">
+                    <a href="" class="address">г. Киев, пр-т Леси Украинки, 26</a>
+                    <a href="mailto:info@devstudio.com" class="contact">info@devstudio.com</a>
+                    <a href="tel:380961111111" class="contact">+38 096 111 11 11</a>
+                </address>
+            </div>
+            <div class="join">
+                <b class="join-title">присоединяйтесь</b>
+                <ul class="link list">
+                    <li class="link-social">
+                        <a href="#" aria-label="instagram">
+                            <svg class="icon" width="20" height="20">
+                                <use href="./images/spirite.svg#instagram"></use>
+                            </svg>
+                        </a>
+                    </li>
+                    <li class="link-social">
+                        <a href="#" aria-label="twitter">
+                            <svg class="icon" width="20" height="20">
+                                <use href="./images/spirite.svg#twitter"></use>
+                            </svg>
+                        </a>
+                    </li>
+                    <li class="link-social">
+                        <a href="#" aria-label="facebook">
+                            <svg class="icon" width="20" height="20">
+                                <use href="./images/spirite.svg#facebook"></use>
+                            </svg>
+                        </a>
+                    </li>
+                    <li class="link-social">
+                        <a href="#" aria-label="linkedin">
+                            <svg class="icon" width="20" height="20">
+                                <use href="./images/spirite.svg#linkedin"></use>
+                            </svg>
+                        </a>
+                    </li>
+                </ul>
+            </div>
         </div>
     </footer>
 </body>

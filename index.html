@@ -43,11 +43,21 @@
         </div>
     </header>
     <main>
+        <!-- Модальное окно -->
+        <div class="backdrop is-hidden" data-modal>
+            <div class="modal">
+                <button class="button-close" data-modal-close>
+                    <!-- <svg class="icon" width="30" height="30" >
+                                    <use href="./images/spirite.svg#mail-icon"></use>
+                                </svg> -->
+                </button>
+            </div>
+        </div>
              <!-- Герой -->
         <section class="section hero">
             <div class="conteiner hello">
             <h1 class="hero-title">Эффективные решения для вашего бизнеса</h1>
-            <a href="" class="botton list">Заказать услугу</a>
+            <a href="#" class="botton list" data-modal-open>Заказать услугу</a>
             </div>
         </section>
             <!-- Особенности -->
@@ -99,9 +109,18 @@
             <div class="conteiner">
             <h2 class="section-title">Чем мы занимаемся</h2>
             <ul class="section-work list">
-                <li class="item"><a href=""><img src="./images/imgcomp.jpg" alt="робота за компютером" width="370" height="294"></a></li>
-                <li class="item"><a href=""><img src="./images/imgtelefon.jpg" alt="робота за компютером" width="370" height="294"></a></li>
-                <li class="item"><a href=""><img src="./images/imgrutina.jpg" alt="подбор цветов" width="370" height="294"></a></li>
+                <li class="item">
+                    <a href=""><img src="./images/imgcomp.jpg" alt="робота за компютером" width="370" height="294"></a>
+                    <p class="text">Десктопные приложения</p>
+                </li>
+                <li class="item">
+                    <a href=""><img src="./images/imgtelefon.jpg" alt="робота за компютером" width="370" height="294"></a>
+                    <p class="text">Мобильные приложения</p>
+                </li>
+                <li class="item">
+                    <a href=""><img src="./images/imgrutina.jpg" alt="подбор цветов" width="370" height="294"></a>
+                    <p class="text">Дизайнерские решения</p>
+                </li>
             </ul>
             </div>
         </section>
@@ -336,5 +355,6 @@
             </div>
         </div>
     </footer>
+    <script src="./js/modal.js"></script>
 </body>
 </html>
